@@ -11,7 +11,8 @@
     "rebuild": "vite build && rm -R docs && cp -r dist docs",
     "git": "git add . && git commit && git push origin main",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "cp build/index.html build/404.html"
   },
   "dependencies": {
     "react": "^18.2.0",
